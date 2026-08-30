@@ -2,13 +2,14 @@
 
 * [Reconnaissance](README.md)
 
-## Local Device Enumeration
+## Tools
 
-* [IPv6 Device Enumeration](local-device-enumeration/ipv6-device-enumeration.md)
+* [Network Mapper (NMap)](tools/network-mapper-nmap.md)
+* [MassScan](tools/massscan.md)
+* [Dirbuster, Gobuster, & Feroxbuster](tools/dirbuster-gobuster-and-feroxbuster.md)
+* [Fuzz Faster U Fool (FFUF)](tools/fuzz-faster-u-fool-ffuf.md)
+* [ZGrab](tools/zgrab.md)
 
-***
+## Concepts & Protocols
 
-* [Network Mapper (NMap)](network-mapper-nmap.md)
-* [MassScan](massscan.md)
-* [Dirbuster, Gobuster, & Feroxbuster](dirbuster-gobuster-and-feroxbuster.md)
-* [Fuzz Faster U Fool (FFUF)](fuzz-faster-u-fool-ffuf.md)
+* [IPv6 Device Enumeration](concepts-and-protocols/ipv6-device-enumeration.md)
