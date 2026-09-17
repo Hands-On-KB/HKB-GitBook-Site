@@ -68,7 +68,9 @@ tags:
 
 ## Script Scans
 
-* The NMap Scripting Engine (NSE) has hundreds of scripts already written for it broken down into 14 categories:
+{% embed url="https://nmap.org/nsedoc/scripts/" %}
+
+The NMap Scripting Engine (NSE) has hundreds of scripts already written for it broken down into 14 categories:
 
 | `auth`      | `Determination of authentication credentials.`                                                                                            |
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
