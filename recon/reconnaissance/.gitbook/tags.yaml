@@ -1,0 +1,8 @@
+- tag: scanning
+  label: scanning
+  icon: scanner-gun
+- tag: nmap
+  label: NMap
+- tag: recon
+  label: recon
+  icon: binoculars
