@@ -1,0 +1,376 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: HandsOnKB Docs
+  structure:
+    - type: section
+      key: section-1
+      title: HKB Cybersecurity Reference Guide
+      path: handsonkb-docs
+      description: Technical documents aggregated and written based on several different cybersecurity education sources to set a common view of best practices and techniques.
+      default: true
+      children:
+        - type: space
+          key: space-1
+          title: HKB Cybersecurity Reference Guide
+          path: docs
+          default: true
+          content:
+            directory: ./handsonkb-docs/docs
+    - type: section-group
+      key: section-group-3
+      title: Pre-Req Info for Cyber
+      icon: books
+      children:
+        - type: section
+          key: section-11
+          title: Operating System Fundamentals
+          path: operating-system-fundamentals
+          description: Pre-requisite knowledge on common operating systems to functionally perform a role in cybersecurity.
+          icon: gears
+          children:
+            - type: space
+              key: space-11
+              title: Operating System Fundamentals
+              path: os-fundamentals
+              default: true
+              content:
+                directory: ./operating-system-fundamentals/os-fundamentals
+        - type: section
+          key: section-12
+          title: Networking Fundamentals
+          path: networking-fundamentals
+          description: The pre-requisite knowledge needed on wired and wireless computer networking in order to functionally perform a role in cybersecurity.
+          icon: circle-wifi
+          children:
+            - type: space
+              key: space-12
+              title: Networking Fundamentals
+              path: networking-fundamentals
+              default: true
+              content:
+                directory: ./networking-fundamentals
+        - type: section
+          key: section-13
+          title: Hardware Fundamentals
+          path: hardware-fundamentals
+          description: Pre-requisite knowledge required on computer hardware that's needed to functionally perform a role in cybersecurity.
+          icon: wrench
+          children:
+            - type: space
+              key: space-13
+              title: Hardware Fundamentals
+              path: hardware-fundamentals
+              default: true
+              content:
+                directory: ./hardware-fundamentals
+    - type: section-group
+      key: section-group-5
+      title: Recommended Info for Cyber
+      icon: head-side-brain
+      children:
+        - type: section
+          key: section-20
+          title: Programming Languages
+          path: programming-languages
+          description: Relevant programming languages in today's computing market, and the role they play in cybersecurity.
+          icon: laptop-code
+          children:
+            - type: space
+              key: space-20
+              title: Programming Languages
+              path: programming-languages
+              default: true
+              content:
+                directory: ./programming-languages
+        - type: section
+          key: section-21
+          title: Computer Hardware Engineering
+          path: computer-hardware-engineering
+          description: Information on the components and function of computing devices.
+          icon: microchip
+          children:
+            - type: space
+              key: space-21
+              title: Computer Hardware Engineering
+              path: computer-hardware-engineering
+              default: true
+              draft: true
+              content:
+                directory: ./computer-hardware-engineering
+        - type: section
+          key: section-22
+          title: Scripting
+          path: scripting
+          description: Using scripting languages to automate tasks, saving time and producing consistent outputs.
+          icon: scroll-old
+          children:
+            - type: space
+              key: space-22
+              title: Scripting
+              path: scripting
+              default: true
+              draft: true
+              content:
+                directory: ./scripting
+    - type: section-group
+      key: section-group-1
+      title: Offensive Security
+      icon: swords
+      children:
+        - type: section
+          key: section-2
+          title: Reconnaissance
+          path: recon
+          description: Active and passive means for gaining information on targets prior to engaging with them directly.
+          icon: binoculars
+          children:
+            - type: space
+              key: space-2
+              title: Reconnaissance
+              path: reconnaissance
+              default: true
+              content:
+                directory: ./recon/reconnaissance
+        - type: section
+          key: section-3
+          title: Initial Access
+          path: initial-access
+          description: Methods for initially gaining access to target networks and/or endpoints.
+          icon: key
+          children:
+            - type: space
+              key: space-3
+              title: Initial Access
+              path: initial-access
+              default: true
+              content:
+                directory: ./initial-access
+        - type: section
+          key: section-4
+          title: Persistence
+          path: persistence
+          description: Methods for maintaining access to the target in case of reboots, account removals, and other defender actions.
+          icon: anchor
+          children:
+            - type: space
+              key: space-4
+              title: Persistence
+              path: persistence
+              default: true
+              content:
+                directory: ./persistence
+        - type: section
+          key: section-8
+          title: Exfiltration
+          path: exfiltration
+          description: Methods for taking data out of target environments to be stored elsewhere.
+          icon: plane
+          children:
+            - type: space
+              key: space-8
+              title: Exfiltration
+              path: exfiltration
+              default: true
+              draft: true
+              content:
+                directory: ./exfiltration
+        - type: section
+          key: section-9
+          title: Privilege Escalation
+          path: privilege-escalation
+          description: Finding misconfigurations and vulnerabilities that can be exploited to increase a malicious actor's local or network privileges.
+          icon: black-tie
+          children:
+            - type: space
+              key: space-9
+              title: Privilege Escalation
+              path: privilege-escalation
+              default: true
+              content:
+                directory: ./privilege-escalation
+        - type: section
+          key: section-14
+          title: Malware Development
+          path: malware-development
+          description: The creation of malicious software for use by criminals, activists, nation-state governments, or the highest bidder.
+          icon: virus
+          children:
+            - type: space
+              key: space-14
+              title: Malware Development
+              path: malware-development
+              default: true
+              content:
+                directory: ./malware-development
+        - type: section
+          key: section-15
+          title: Social Engineering
+          path: social-engineering
+          description: Exploiting human psychology in order to gain access to accounts, data, networks, or devices.
+          icon: person-walking
+          children:
+            - type: space
+              key: space-15
+              title: Social Engineering
+              path: social-engineering
+              default: true
+              content:
+                directory: ./social-engineering
+        - type: section
+          key: section-18
+          title: AI Red Teaming
+          path: ai-red-teaming
+          description: Tactics, techniques, and procedures used to attack AI models and agents.
+          icon: robot
+          children:
+            - type: space
+              key: space-18
+              title: AI Red Teaming
+              path: ai-red-teaming
+              default: true
+              draft: true
+              content:
+                directory: ./ai-red-teaming
+        - type: section-group
+          key: section-group-6
+          title: Man-in-the-Middle (MitM) Attacks
+          icon: objects-align-center-vertical
+          draft: true
+          children:
+            - type: section
+              key: section-24
+              title: Local Network MitM Attack Vectors
+              path: hot-standby-router-protocol-hsrp
+              description: ""
+              children:
+                - type: space
+                  key: space-24
+                  title: Hot Standby Router Protocol (HSRP)
+                  path: hsrp-mitm
+                  default: true
+                  content:
+                    directory: ./hot-standby-router-protocol-hsrp/hsrp-mitm
+    - type: section-group
+      key: section-group-2
+      title: Defensive Security
+      icon: shield-keyhole
+      children:
+        - type: section
+          key: section-5
+          title: Detection Engineering & Threat Hunting
+          path: detection-engineering-threat-hunting
+          description: Creating detection rules for identifying malicious, suspicious, or potentially harmful actions taking place or that already occurred.
+          icon: magnifying-glass-waveform
+          children:
+            - type: space
+              key: space-5
+              title: Detection Engineering & Threat Hunting
+              path: detection-engineering-threat-hunting
+              default: true
+              content:
+                directory: ./detection-engineering-threat-hunting
+        - type: section
+          key: section-6
+          title: Malware Analysis & Reverse Engineering
+          path: malware-analysis
+          description: Analyzing samples of malicious software or programs to identify their capabilities and origins.
+          icon: head-side-virus
+          children:
+            - type: space
+              key: space-6
+              title: Malware Analysis
+              path: malware-analysis
+              default: true
+              content:
+                directory: ./malware-analysis
+        - type: section
+          key: section-7
+          title: Digital Forensics
+          path: digital-forensics
+          description: Searching for digital artifacts showing specific activity taking place on endpoints and networks.
+          icon: user-hat-tie-magnifying-glass
+          children:
+            - type: space
+              key: space-7
+              title: Digital Forensics
+              path: digital-forensics
+              default: true
+              content:
+                directory: ./digital-forensics
+        - type: section
+          key: section-10
+          title: Endpoint Hardening
+          path: endpoint-hardening
+          description: OS and device configuration settings, as well as native and third-party security solutions, that can be used to secure an endpoint.
+          icon: lock
+          children:
+            - type: space
+              key: space-10
+              title: Endpoint Hardening
+              path: endpoint-hardening
+              default: true
+              content:
+                directory: ./endpoint-hardening
+        - type: section
+          key: section-19
+          title: AI Security
+          path: ai-security
+          icon: user-robot
+          children:
+            - type: space
+              key: space-19
+              title: AI Security
+              path: ai-security
+              default: true
+              draft: true
+              content:
+                directory: ./ai-security
+        - type: section
+          key: section-23
+          title: Cyber Threat Intelligence
+          path: cyber-threat-intelligence
+          icon: eye
+          children:
+            - type: space
+              key: space-23
+              title: Cyber Threat Intelligence
+              path: cyber-threat-intelligence
+              default: true
+              content:
+                directory: ./cyber-threat-intelligence
+    - type: section-group
+      key: section-group-4
+      title: Purple Team Operations
+      icon: handshake
+      draft: true
+      children:
+        - type: section
+          key: section-16
+          title: Purple Team Activity
+          path: purple-team-activity
+          description: Operations where the Offensive Security (Red) and Defensive Security (Blue) teams work together for a stronger enterprise.
+          icon: handshake
+          children:
+            - type: space
+              key: space-16
+              title: Purple Team Activity
+              path: purple-team-activity
+              default: true
+              draft: true
+              content:
+                directory: ./purple-team-activity
+        - type: section
+          key: section-17
+          title: Cyber Ranges
+          path: cyber-ranges
+          description: Recreations of a target environment in order to analyze its weaknesses and strengths while practicing either for general skill development or in preparation for actual operations or engagements.
+          icon: location-crosshairs
+          children:
+            - type: space
+              key: space-17
+              title: Cyber Ranges
+              path: cyber-ranges
+              default: true
+              draft: true
+              content:
+                directory: ./cyber-ranges
