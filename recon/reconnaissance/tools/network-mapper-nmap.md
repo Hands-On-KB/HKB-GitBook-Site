@@ -1,6 +1,5 @@
 ---
 description: https://nmap.org/
-hidden: true
 icon: map
 layout:
   width: wide
