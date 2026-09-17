@@ -1,6 +1,31 @@
 ---
 description: https://nmap.org/
+hidden: true
 icon: map
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
+tags:
+  - scanning
+  - nmap
+  - recon
 ---
 
 # Network Mapper (NMap)
