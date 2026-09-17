@@ -65,6 +65,8 @@ tags:
 * `--min-rate <number>`: How many packets should be sent simultaneously to the target's ports.
 * `--max-retries <number>`: Allows you to control how many times NMap attempts to contact a port. The default is 10, so setting it lower can speed up scans.
 * `-D RND:<Number>`: Includes a randomized number of decoy IPs that your scan is run from in order to confuse defenders analyzing network traffic.
+* `-S <IP Address>`: Spoof another IP while running your scan. This will complicate your ability to receive the results though.
+* `-e <Network Interface Name>`: Allows you to run the scan through a different NIC than your default, such as using `tun0` to run the scan through an OpenVPN connection.
 
 ## Script Scans
 
