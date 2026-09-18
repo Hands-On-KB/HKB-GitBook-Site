@@ -1,3 +1,6 @@
 # Table of contents
 
-* [PowerShell](README.md)
+## PowerShell
+
+* [PowerShell Overview](README.md)
+* [Important PowerShell Directories](powershell/important-powershell-directories.md)
