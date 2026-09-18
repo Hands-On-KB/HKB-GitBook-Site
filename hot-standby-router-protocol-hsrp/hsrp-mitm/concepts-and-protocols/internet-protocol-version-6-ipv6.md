@@ -10,7 +10,7 @@ description: https://en.wikipedia.org/wiki/IPv6
 
 Neighbor Discovery (ND) replaces ARP for IPv6, and Neighbor Impersonation works similarly to ARP Spoofing. Instead of ARP requests and responses, IPv6 has Neighbor Solicitations (NS) and Neighbor Advertisements (NA).
 
-1. Victim sends Neighbor Solicitation (NS) message on the multicast address trying to map an IPv6 address to a MAC address.
+1. Victim sends a Neighbor Solicitation (NS) message to the solicited-node multicast address (ff02::1:ff00:0/104 plus the low 24 bits of the target address) trying to map an IPv6 address to a MAC address.
 2. Legitimate device on the network sees the Neighbor Solicitation from the victim and sends a Neighbor Advertisement in response.
 3. Attacker sends a Neighbor Advertisement (NA) message in response to the victim with the Override flag set impersonating the legitimate device on the network that the victim was looking for. This takes the place of the legitimate response in the victim's neighbor mapping for the network.
 
@@ -18,9 +18,13 @@ Neighbor Discovery (ND) replaces ARP for IPv6, and Neighbor Impersonation works 
 
 Nodes on an IPv6 network use Router Solicitation (RS) messages to determine where local routers are, and the routers send Router Advertisement (RA) messages in response with configuration information for the nodes. Similar to HSRP or VRRP MitM attacks, the attacker is able to claim to be a router with a higher preference to insert themselves between the victim nodes and the legitimate router.
 
-1. Nodes send ICMPv6 RS messages looking for routers on the local network using the anycast class of IPv6 addresses.
-2. Routers receiving those messages will send an ICMPv6 RA message to the multicast address class that reaches all nodes.
-3. The attacker sends their own RA message to that same multicast address reaching all nodes, and claims their device has the highest preference in order to take over all IPv6 traffic from the victim and forward it to the real router while sniffing.
+1. Nodes send ICMPv6 RS messages to `ff02::2`, the all-routers link-local **multicast** address, looking for routers on the local network.
+2. Routers receiving those messages send an ICMPv6 RA message to `ff02::1`, the all-nodes multicast address (a solicited reply is often unicast back to the requesting node instead).
+3. The attacker sends their own RA message to `ff02::1`, reaching every node on the link, and sets the Default Router Preference field (RFC 4191) to High in order to take over IPv6 traffic from the victims and forward it to the real router while sniffing.
+
+{% hint style="info" %}
+RA Guard on managed switches is the usual control against this, so check whether it is in place before planning the attack around it.
+{% endhint %}
 
 ## Linux IPv6 Traffic Forwarding
 
