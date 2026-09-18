@@ -63,6 +63,11 @@ site:
               default: true
               content:
                 directory: ./hardware-fundamentals
+        - type: section-group
+          key: section-group-7
+          title: Protocols
+          draft: true
+          children: []
     - type: section-group
       key: section-group-5
       title: Recommended Info for Cyber
