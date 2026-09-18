@@ -16,7 +16,9 @@ System calls (syscalls) and application programming interface (API) requests are
 
 #### Things Running in User Space
 
-Applications, File System Explorers, Settings and Configuration, Command Shells, Services
+Applications, File System Explorers, Settings and Configuration, Command Shells, Services, and the processes and threads those create.
+
+Shared Object (.so) files for Linux and Dynamic Link Libraries (.dll) for Windows also live here. These are user-space code libraries that applications load at runtime, and they form the building blocks of most of what you do day to day. They are a common target for hijacking (see DLL hijacking and LD\_PRELOAD abuse), but they are not kernel code.
 
 #### Data Used in User Space
 
@@ -24,13 +26,15 @@ Documents, spreadsheets, photos, source code, cached data (e.g., browser cookies
 
 ### Kernel Space (Where the OS Works)
 
-This is the core of the operating system where the lowest level functions and processes live and the highest level of privilege is granted. Actions executed in kernel space have full trust within the OS, and errors within the kernel cause a full system crash.
+This is the core of the operating system where the lowest level functions and processes live and the highest level of privilege is granted. Actions executed in kernel space have full trust within the OS, and errors within the kernel cause a full system crash (a kernel panic on Linux, a bugcheck/BSOD on Windows).
 
-Things like Shared Object (.so) files for Linux and Dynamic Link Libraries (.dll) for Windows contain the code used in the OS kernel that form the building blocks of everything you do in the user space. Malware made to explicitly target the OS kernel is known as a "rootkit."
+Kernel code ships as loadable kernel modules: .ko files on Linux and .sys files on Windows. Malware made to explicitly target the OS kernel is known as a "rootkit."
 
 #### Things Running in Kernel Space
 
-Processes, Threads, OS Code Libraries (.so and .dll), CPU schedulers, memory managers, device drivers (.sys for Windows and .ko for Linux).
+CPU schedulers, memory managers, the file system and network stacks, device drivers (.sys for Windows and .ko for Linux), and interrupt handlers.
+
+Processes and threads are created and scheduled by the kernel, but their own code runs in user space. A thread only enters kernel space for the duration of a syscall.
 
 #### Data Used in Kernel Space
 
@@ -46,5 +50,4 @@ Power Supply, CPU, RAM, UEFI/BIOS, Wired and Wireless Networking
 
 #### Data Used in Hardware
 
-Electrical Signals, CPU instruction sets (x86 & x64), Memory Addresses
-
+Electrical Signals, CPU instruction sets (x86 and x86-64 are the instruction set architectures; x64 is Microsoft's name for x86-64), Memory Addresses

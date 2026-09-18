@@ -10,9 +10,9 @@ description: >-
 
 ## Ethernet
 
-Ethernet is the original form of the local internet connection. In the past before Wi-Fi, a CAT-3 or CAT-4 cable would be plugged into a Switch, Server, or personal computer and connected to your local modem or router.
+Ethernet is the dominant wired local area network (LAN) technology, and it is still in heavy use today alongside Wi-Fi rather than a relic that preceded it. A twisted-pair cable runs from a host's network interface to a switch, and the switch uplinks toward the router or modem that reaches the wider network.
 
-
+Cabling is graded by category. CAT-3 carried early 10BASE-T, CAT-4 was a short-lived grade used mainly for 16 Mbps Token Ring and saw almost no Ethernet deployment, and CAT-5/5e/6/6a are what actually carry modern Gigabit and multi-gigabit Ethernet.
 
 ## TCP and UDP
 
@@ -24,5 +24,4 @@ Ethernet is the original form of the local internet connection. In the past befo
 
 ## HTTP & HTTPS
 
-The mostly deprecated HTTP, and currently widespread HTTPS, form what we currently think of as "being online" when visiting websites, using mobile apps,&#x20;
-
+HTTP is the application protocol behind what we think of as "being online" when visiting websites and using mobile apps. It is not deprecated — HTTPS _is_ HTTP, carried inside a TLS-encrypted connection. What has been deprecated in practice is sending HTTP over an unencrypted channel, which browsers now warn on and most sites refuse outright.
