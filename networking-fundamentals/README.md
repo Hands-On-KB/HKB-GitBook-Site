@@ -11,7 +11,7 @@ icon: circle-wifi
 
 ### Near Field Communication (NFC)
 
-### BlueTooth
+### Bluetooth
 
 ### AirDrop
 
@@ -33,9 +33,8 @@ icon: circle-wifi
 
 ### Transmission Control Protocol (TCP)/Internet Protocol (IP)
 
-### Domain Name Service (DNS)
+### Domain Name System (DNS)
 
 ### Network Address Translation (NAT)
 
 ### Address Resolution Protocol (ARP)
-
