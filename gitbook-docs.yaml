@@ -263,6 +263,20 @@ site:
                   default: true
                   content:
                     directory: ./hot-standby-router-protocol-hsrp/hsrp-mitm
+        - type: section
+          key: section-26
+          title: Active Directory
+          path: active-directory
+          icon: fort-awesome
+          children:
+            - type: space
+              key: space-26
+              title: Active Directory
+              path: active-directory
+              default: true
+              draft: true
+              content:
+                directory: ./active-directory
     - type: section-group
       key: section-group-2
       title: Defensive Security
