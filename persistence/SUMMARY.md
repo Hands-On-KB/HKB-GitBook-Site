@@ -10,12 +10,6 @@
 * [AWSDoor](aws-azure-gcp/awsdoor.md)
 * [FireProx](aws-azure-gcp/fireprox.md)
 
-## Resources
-
-***
-
-* [Hacking The Cloud](hacking-the-cloud.md)
-
 ## Windows
 
 ***
