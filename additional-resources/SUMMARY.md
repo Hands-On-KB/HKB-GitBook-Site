@@ -3,10 +3,8 @@
 ## Cloud
 
 * [Hacking The Cloud](README.md)
-* [Page 1](cloud/page-1.md)
+* [MITRE ATT\&CK Cloud Framework](cloud/mitre-att-and-ck-cloud-framework.md)
 
-## Group 1
+## Attacker TTPs
 
-***
-
-* [GTFOBins, LOLDrivers, & LOLBAS](gtfobins-loldrivers-and-lolbas.md)
+* [GTFOBins, LOLDrivers, & LOLBAS](attacker-ttps/gtfobins-loldrivers-and-lolbas.md)
