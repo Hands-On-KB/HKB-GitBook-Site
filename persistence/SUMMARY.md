@@ -5,9 +5,16 @@
 * [Cron Jobs](README.md)
 * [Shared Objects & Kernel Objects](linux/shared-objects-and-kernel-objects.md)
 
-## AWS
+## AWS/Azure/GCP
 
-* [AWSDoor](aws/awsdoor.md)
+* [AWSDoor](aws-azure-gcp/awsdoor.md)
+* [FireProx](aws-azure-gcp/fireprox.md)
+
+## Resources
+
+***
+
+* [Hacking The Cloud](hacking-the-cloud.md)
 
 ## Windows
 
