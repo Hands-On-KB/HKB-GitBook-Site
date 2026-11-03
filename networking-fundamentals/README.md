@@ -141,5 +141,3 @@ The global routing ecosystem relies on an economic and operational hierarchy of 
 * Tier 1 Backbone Carriers: The backbone operators (such as Lumen, AT\&T, Telia, NTT, and Tata). They operate transcontinental and transoceanic optical fiber trunks. Crucially, Tier 1 providers peer settlement-free with each other—meaning they swap massive volumes of traffic without paying one another transit fees.
 * Tier 2 Providers: Regional and national networks that peer with some peers for free but must pay Tier 1 carriers for transit access to reach the rest of the global routing table.
 * Tier 3 ISPs (Last Mile): Local retail consumer and enterprise providers. They sell direct connectivity to homes, businesses, and mobile cell towers, purchasing upstream transit from Tier 2 or Tier 1 networks.
-
-<h2 align="center">)</h2>
