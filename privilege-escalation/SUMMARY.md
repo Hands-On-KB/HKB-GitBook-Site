@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Privilege Escalation](README.md)
+* [AMSI Bypass Techniques](amsi-bypass-techniques.md)
 
 ## Windows
 
