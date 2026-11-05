@@ -1,7 +1,6 @@
 # Table of contents
 
 * [OS Fundamentals](README.md)
-* [Anti-Malware Scan Interface (AMSI)](anti-malware-scan-interface-amsi.md)
 
 ## Linux/Unix
 
@@ -9,4 +8,5 @@
 
 ## Windows
 
+* [Anti-Malware Scan Interface (AMSI)](windows/anti-malware-scan-interface-amsi.md)
 * [Windows Command Run Hierarchy](windows/windows-command-run-hierarchy.md)
